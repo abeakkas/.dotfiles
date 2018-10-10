@@ -29,6 +29,3 @@ set laststatus=2
 " Shortcuts for gt, rip {}
 nmap } gt
 nmap { gT
-" Highlight trailing whitespace
-highlight TrailingWhitespace ctermbg=red guibg=red
-match TrailingWhitespace /\s\+$/
