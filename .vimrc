@@ -5,10 +5,10 @@ set shiftwidth=4
 set expandtab
 set smartindent
 " Be lenient:
-command WQ wq
-command Wq wq
-command W w
-command Q q
+command! WQ wq
+command! Wq wq
+command! W w
+command! Q q
 " Highlight search but don't be annoying:
 set hlsearch
 nnoremap <C-c> :nohlsearch<return><C-c>
@@ -29,3 +29,5 @@ set laststatus=2
 " Shortcuts for gt, rip {}
 nmap } gt
 nmap { gT
+" Fancy update
+command! Updatevimrc execute "! wget https://raw.githubusercontent.com/abeakkas/defaults/master/.vimrc -O ~/.vimrc" | so ~/.vimrc
