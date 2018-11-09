@@ -30,4 +30,4 @@ set laststatus=2
 nmap } gt
 nmap { gT
 " Fancy update
-command! Updatevimrc execute "! wget https://raw.githubusercontent.com/abeakkas/defaults/master/.vimrc -O ~/.vimrc" | so ~/.vimrc
+command! Updatevimrc execute "! curl https://raw.githubusercontent.com/abeakkas/defaults/master/.vimrc -o ~/.vimrc" | so ~/.vimrc
