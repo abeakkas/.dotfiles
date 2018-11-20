@@ -1,4 +1,5 @@
 colorscheme desert
+syntax on
 " Tabs rulez
 set tabstop=4
 set shiftwidth=4
