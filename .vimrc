@@ -27,6 +27,7 @@ if !&scrolloff
 endif
 " Status bar
 set laststatus=2
+set ruler
 " Shortcuts for gt, rip {}
 nmap } gt
 nmap { gT
