@@ -1,2 +1,7 @@
-defscrollback 10000
+# Scroll forever
+defscrollback 30000
+# Remove annoying lock screen
+bind ^x
+bind x
+# Open up with bash
 shell -bash
