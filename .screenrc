@@ -1,7 +1,9 @@
 # Scroll forever
 defscrollback 30000
-# Remove annoying lock screen
+# Disable annoying lock screen
 bind ^x
 bind x
+# Prevent vim from destroying scrollback
+altscreen on
 # Open up with bash
 shell -bash
