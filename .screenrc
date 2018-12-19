@@ -1,3 +1,4 @@
+startup_screen off
 # Scroll forever
 defscrollback 30000
 # Disable annoying lock screen
