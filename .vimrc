@@ -33,3 +33,4 @@ nmap } gt
 nmap { gT
 " Folding
 set foldmethod=syntax
+set foldlevel=100
