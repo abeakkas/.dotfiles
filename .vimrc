@@ -33,5 +33,3 @@ nmap } gt
 nmap { gT
 " Folding
 set foldmethod=syntax
-" Fancy update
-command! Updatevimrc execute "! curl https://raw.githubusercontent.com/abeakkas/defaults/master/.vimrc -o ~/.vimrc" | so ~/.vimrc

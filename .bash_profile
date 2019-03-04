@@ -1,11 +1,9 @@
-#<defaults>
 PS1="\[\033[38;5;223m\]${debian_chroot:+($debian_chroot)}\u@\h$([ -n "$STY" ] && echo "[screen]"):\w\$\[\033[m\] "
-# Keeps programs running
+# Fix screen vim color issue
+export TERM=xterm-256color
+# Keeps programs running without losing Kerberos
 inception () {
     screen -S ${1:-inception} ssh $USER@$HOSTNAME
 }
-update_bash_profile () {
-    perl -0pe "s/#<defaults>.*#<\/defaults>/$(curl https://raw.githubusercontent.com/abeakkas/defaults/master/.bash_profile)/gs" ~/.bash_profile > ~/.bash_profile
-}
+# Show running screens
 screen -ls
-#</defaults>

@@ -8,3 +8,8 @@ bind x
 altscreen on
 # Open up with bash
 shell -bash
+# Fix vim color issue
+term screen-256color
+# Status line
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
