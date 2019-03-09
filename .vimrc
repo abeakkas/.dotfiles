@@ -28,9 +28,19 @@ endif
 " Status bar
 set laststatus=2
 set ruler
+set showcmd
 " Shortcuts for gt, rip {}
 nmap } gt
 nmap { gT
-" Folding
-set foldmethod=syntax
-set foldlevel=100
+" Always show tabs at top
+set showtabline=2
+" Folding (too slow)
+" set foldmethod=syntax
+" set foldlevel=100
+" Scroll while moving around
+nnoremap <Up> <C-Y><Up>
+nnoremap <Down> <C-E><Down>
+" Unveil the evil that is tabs and trailing spaces (and long lines)
+au BufNewFile,BufRead * match Error /\t\| \+$\|\%81v./
+" Who uses q: anyways
+noremap q: <Nop>
