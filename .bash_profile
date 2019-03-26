@@ -6,13 +6,11 @@ inception () {
     screen -S ${1:-inception} ssh $USER@$HOSTNAME
 }
 # Some shortcuts for common git operations
-gitlog () {
-    git log --graph --all --decorate --oneline
-}
-gitstatus () { git status ; }
-gitdiff () { git diff ; }
-gitdiffw () { git diff --word-diff=color ; }
-gitdiffs () { git diff --staged ; }
-gitdiffws () { git diff --word-diff=color --staged ; }
+gitlog ()    { git log --graph --all --decorate --oneline "$@" ; }
+gitstatus () { git status "$@" ; }
+gitdiff ()   { git diff "$@" ; }
+gitdiffw ()  { git diff --word-diff=color "$@" ; }
+gitdiffs ()  { git diff --staged "$@" ; }
+gitdiffws () { git diff --word-diff=color --staged "$@" ; }
 # Show running screens
 screen -ls
