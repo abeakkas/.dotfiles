@@ -6,7 +6,7 @@ inception () {
     screen -S ${1:-inception} ssh $USER@$HOSTNAME
 }
 # Some shortcuts for common git operations
-gitlog ()    { git log --graph --all --decorate --oneline "$@" ; }
+gitlog ()    { git log --graph --all --decorate --oneline --relative-date --format=format:"%C(auto)%h %C(blue)%an%C(reset)%C(auto)%d %s %C(yellow)%ad" "$@" ; }
 gitstatus () { git status "$@" ; }
 gitdiff ()   { git diff "$@" ; }
 gitdiffw ()  { git diff --word-diff=color "$@" ; }

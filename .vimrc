@@ -34,13 +34,18 @@ nmap } gt
 nmap { gT
 " Always show tabs at top
 set showtabline=2
-" Folding (too slow)
-" set foldmethod=syntax
-" set foldlevel=100
-" Scroll while moving around
-nnoremap <Up> <C-Y><Up>
-nnoremap <Down> <C-E><Down>
+" Folding
+command! -nargs=1 Fold set foldmethod=syntax | set foldlevel=<args>
+command! Nofold set nofoldenable
+" Arrows no more:
+nnoremap <Up> <C-Y>
+nnoremap <Down> <C-E>
+nnoremap <Left> ^
+nnoremap <Right> $
 " Unveil the evil that is tabs and trailing spaces (and long lines)
 au BufNewFile,BufRead * match Error /\t\| \+$\|\%81v./
 " Who uses q: anyways
 noremap q: <Nop>
+" Git commands
+command! Gitdiff ! git diff %
+command! Gitdiffw ! git diff --word-diff=color %
