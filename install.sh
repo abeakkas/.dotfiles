@@ -1,4 +1,5 @@
 set -x
+mkdir -p ~/.vim/tmp
 ln -snf $PWD/.vimrc ~/.vimrc
 ln -snf $PWD/.screenrc ~/.screenrc
 # We want to keep local bash options if any, so import instead of linking
