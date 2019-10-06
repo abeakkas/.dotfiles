@@ -29,9 +29,9 @@ endif
 set laststatus=2
 set ruler
 set showcmd
-" Shortcuts for gt, rip {}
-nmap } gt
-nmap { gT
+" Shortcuts for gt, rip []
+nmap ] gt
+nmap [ gT
 " Always show tabs at top
 set showtabline=2
 " Folding
