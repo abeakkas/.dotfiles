@@ -1,4 +1,4 @@
-colorscheme desert
+colorscheme torte
 syntax on
 " Tabs rulez
 set tabstop=4
@@ -43,9 +43,9 @@ nnoremap <Down> <C-E>
 nnoremap <Left> ^
 nnoremap <Right> $
 " Unveil the evil that is tabs and trailing spaces (and long lines)
-au BufNewFile,BufRead * match Error /\t\| \+$\|\%81v./
-" Who uses q: anyways
-noremap q: <Nop>
+au FileType python,c,cpp,html match Error /\t\| \+$\|\%81v./
+" Who uses q anyways
+noremap q <Nop>
 " Git commands
 command! Gitdiff ! git diff %
 command! Gitdiffw ! git diff --word-diff=color %
