@@ -32,6 +32,9 @@ set showcmd
 " Shortcuts for gt, rip []
 nmap ] gt
 nmap [ gT
+" Keep block after shifting
+vnoremap < <gv
+vnoremap > >gv
 " Always show tabs at top
 set showtabline=2
 " Folding
