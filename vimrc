@@ -41,10 +41,10 @@ set showtabline=2
 command! -nargs=1 Fold set foldmethod=syntax | set foldlevel=<args>
 command! Nofold set nofoldenable
 " Arrows no more:
-nnoremap <Up> <C-Y>
-nnoremap <Down> <C-E>
-nnoremap <Left> ^
-nnoremap <Right> $
+" nnoremap <Up> <C-Y>
+" nnoremap <Down> <C-E>
+" nnoremap <Left> ^
+" nnoremap <Right> $
 " Unveil the evil that is tabs and trailing spaces (and long lines)
 au FileType python,c,cpp,html match Error /\t\| \+$\|\%81v./
 " Who uses q anyways
